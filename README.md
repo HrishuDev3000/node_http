@@ -22,18 +22,18 @@
 
 ### Steps
 
-- Start in your `app.js` file
-- Import the http module
-- Using the http module, call the createServer
-- Pass in a request handler callback function to the createServer method that receives request and response objects as parameters
-- Add an event listener to the request object that listens for the ‘data’ event to be emitted from the ReadStream
-- Store the chunks in an array
-- Add an event listener to the request object that listens for the ‘end’ event to be emitted from the ReadStream
-- Set a new variable ‘body’ equal to Buffer.concat(array).toString()
+- //Start in your `app.js` file
+- //Import the http module
+- //Using the http module, call the createServer
+- //Pass in a request handler callback function to the createServer method that receives request and response objects as parameters
+- //Add an event listener to the request object that listens for the ‘data’ event to be emitted from the ReadStream
+- //Store the chunks in an array
+- //Add an event listener to the request object that listens for the ‘end’ event to be emitted from the ReadStream
+- //Set a new variable ‘body’ equal to Buffer.concat(array).toString()
 - Write a conditional statement that assesses the request url, and responds appropriately:
-  - ‘/’ - Wildcard. Respond with whatever information you wish
-  - ‘/about’ - Respond with an object that has information about yourself
+  - //‘/’ - Wildcard. Respond with whatever information you wish
+  - //‘/about’ - Respond with an object that has information about yourself
   - ‘/echo’ - Respond with an object that, a minimum, includes the request method, url and body.
-- Make sure to end your response with .end()
-- Set your server to listen on port 3000
-- Initiate the file using the node.js CLI
+- //Make sure to end your response with .end()
+- // Set your server to listen on port 3000
+- // Initiate the file using the node.js CLI
